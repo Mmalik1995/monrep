@@ -8,7 +8,7 @@ import Fabrique.methodefabrique.PizzaStrasbourg.PizzaVegetarienneStyleStrasbourg
 public class PizzeriaStrasbourg extends Pizzeria {
     @Override
     Pizza creerPizza(String type) {
-
+//
         Pizza pizza=null;
         if(type.equals("fromage")){
             pizza=new PizzaFromageStyleStrasbourg();

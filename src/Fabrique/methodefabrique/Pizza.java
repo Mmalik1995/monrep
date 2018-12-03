@@ -21,6 +21,7 @@ public class Pizza {
     }
 
     public void preparer(){
+        //
         System.out.println("Preparation de "+nom);
         System.out.println("etalage de pate");
         System.out.println("ajoute de la sauce");
