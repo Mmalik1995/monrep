@@ -2,8 +2,10 @@ package Strategie;
 
 public abstract class Canard {
 
-    void voler(){
-        System.out.println("je vole");
+
+    ComportementVol comportementVol;
+    void effectuerVoler(){
+        this.comportementVol.voler();
     }
 
     void concaner (){

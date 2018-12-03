@@ -10,7 +10,7 @@ public class Main {
             c.afficher();
             c.concaner();
             c.nager();
-            c.voler();
+            c.effectuerVoler();
         }
     }
 }
