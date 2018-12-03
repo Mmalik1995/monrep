@@ -2,15 +2,15 @@ package Fabrique.SImple;
 
 public class Pizzeria {
 
+    SimpleFabriquePizza simpleFabriquePizza;
+
+    public Pizzeria(SimpleFabriquePizza simpleFabriquePizza) {
+        this.simpleFabriquePizza = simpleFabriquePizza;
+    }
+
     Pizza commanderPizzer(String type){
-        Pizza pizza =null;
-        if (type.equals("fromage")){
-            pizza =new PizzaFromage();
-        }else if (type.equals("poivrons")){
-            pizza =new PizzaPoivrons();
-        }else if (type.equals("grecques")){
-            pizza =new PizzaGrecques();
-        }
+
+        Pizza pizza =this.simpleFabriquePizza.creerPizza(type);
 
         pizza.preparer();
         pizza.cuire();
